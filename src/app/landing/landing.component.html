@@ -1,0 +1,11 @@
+<p>
+  landing works!
+</p>
+<ul>
+	<li *ngFor="let froze of frozen">
+		{{froze}}
+	</li>
+</ul>
+<h2 [ngStyle]="{color:'#34f990'}">Awesome</h2>
+<h2 [ngStyle]="{'color':climate ==='blue' ? 'blue' : '#34f990'}">Awesome</h2>
+<h2 [ngStyle]="{'color':'getClimateColor({climate})'}">Awesome Climate</h2>
